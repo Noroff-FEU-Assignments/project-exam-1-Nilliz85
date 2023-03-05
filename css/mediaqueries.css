@@ -1,0 +1,129 @@
+/*-------------------- 0000px --------------------*/
+/*-------------------- 0000px --------------------*/
+/*-------------------- 567px --------------------*/
+
+@media (max-width: 567px) {
+  .blog-post-container .top h1 {
+    font-size: 2rem;
+  }
+
+  .blog-post-container .featured-image,
+  .blog-post-container .content .content-image {
+    height: 25rem;
+    margin: 1rem 0;
+  }
+
+  .form {
+    width: 25rem;
+  }
+
+  .about-full {
+    max-width: 40rem;
+  }
+
+  .profile-img {
+    width: 30rem;
+  }
+}
+
+/*-------------------- 800px --------------------*/
+
+@media (max-width: 800px) {
+  .navigation {
+    justify-content: space-between;
+  }
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    background-color: var(--lightblue);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+    transition: all 500ms ease-in-out;
+    margin-top: 10rem;
+  }
+  .nav-list.show {
+    left: 0;
+  }
+
+  .nav-list li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .nav-list li {
+    margin: 0 0 0.5rem;
+    display: block;
+    width: 100%;
+  }
+
+  .nav-list li a {
+    font-size: 2rem;
+    margin-left: 3rem;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+    color: var(--black);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  .blog .blog-text h2 {
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .blog .blog-img {
+    height: 20rem;
+  }
+}
+
+/*-------------------- 850px --------------------*/
+
+@media (max-width: 850px) {
+  .blog-post-container .featured-image img,
+  .blog-post-container .content .content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logo img {
+    height: 5rem;
+  }
+
+  .form {
+    max-width: 45rem;
+  }
+
+  .profile-img img {
+    max-width: 30rem;
+  }
+
+  .form-container,
+  .about-container {
+    width: 40rem;
+  }
+}
+
+/*-------------------- 1200px --------------------*/
+
+@media (max-width: 1200px) {
+  .blog-post-full {
+    min-height: 30rem;
+  }
+
+  .logo img {
+    max-height: 8rem;
+  }
+
+  .form-container,
+  .about-container {
+    max-width: 75rem;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <title>pernilsen.dev | Blog-Post</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is where you read a specific blog posts" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/pernilsen.dev-logo/android-chrome-192x192.png" type="image/x-icon" />
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/blog-post.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+  </head>
+  <body>
+    <!-- The Loading Icon -->
+    <div class="page-loader display-flex" id="loading">
+      <img src="./assets/loader/Eclipse_loader_800px.gif" alt="a loading indicator that looks like an eclipse" />
+    </div>
+
+    <div class="site">
+      <!-- Navigation -->
+      <header class="header" id="header">
+        <nav class="navigation container display-flex">
+          <a class="logo" href="/#/"
+            ><img
+              src="./assets/pernilsen.dev-logo/header-logo.png"
+              alt="The company logo which consists of a closing html tag, the name of the company pernilsen.dev and the slogan
+            it just clicks"
+          /></a>
+          <ul class="nav-list display-flex">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html" class="active">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Hamburger menu -->
+          <div class="hamburger-menu">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+        </nav>
+      </header>
+      <!-- Top Fade section -->
+      <div class="top-fade-section" id="top-fade-section">
+        <div class="top-fade">
+          <div class="top-fade-layout"></div>
+        </div>
+      </div>
+
+      <!-- Main section -->
+      <main>
+        <!-- Blogs -->
+        <div class="content" id="content">
+          <div class="blog-post-full">
+            <div class="blog-post-container">
+              <div class="top">
+                <h1>Lorem Ipsum Dolor, sit amet</h1>
+                <div class="info display-flex">
+                  <span class="display-flex"><i class="bx bx-user"></i> Per Edward</span>
+                  <span class="display-flex"><i class="bx bx-time-five"></i> 25th February 2023</span>
+                </div>
+              </div>
+              <div class="featured-image">
+                <img src="" alt="" />
+              </div>
+              <div class="content"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer section -->
+      <footer class="footer-section" id="footer-section">
+        <div class="footer">
+          <div class="footer-layout">
+            <div class="footer-social">
+              <a href="https://www.linkedin.com/in/pernilsendev/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+              <a href="https://github.com/Nilliz85" target="_blank"><i class="bx bxl-github"></i></a>
+              <a href="https://pernilsen.dev/"><i class="bx bx-code-alt"></i></a>
+            </div>
+            <div class="footer-text">
+              <p>Copyright &COPY; 2023 pernilsen.dev All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/site.js"></script>
+    <script src="./js/blog-post.js"></script>
+  </body>
+</html>

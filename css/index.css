@@ -1,0 +1,169 @@
+/*-------------------- Hero Section --------------------*/
+
+.hero-section {
+  height: 80vh;
+  margin-bottom: 10rem;
+  z-index: 1000;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(39, 118, 186, 0.2), rgba(39, 118, 186, 0.4)), url("../assets/img/hero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-size: 6rem;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  font-size: 3rem;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.under-construction {
+  font-size: 2rem;
+  font-weight: 100;
+  opacity: 40%;
+}
+
+/*-------------------- Slideshow --------------------*/
+
+.blogs {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.blog-category {
+  padding: 0 10vw;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.blog-post-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  max-width: 60vw;
+  margin: auto;
+}
+
+.blog-post-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow-card {
+  flex: 0 0 auto;
+  width: 35rem;
+  height: 45rem;
+  margin-right: 3rem;
+  background-color: var(--blogbox);
+  padding: 2rem;
+}
+
+.slideshow-img {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+}
+
+/* .slideshow-img {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+} */
+
+.slideshow-card:hover {
+  box-shadow: 0 5px 10px var(--grey2);
+}
+
+.slideshow-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-info {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.card-header {
+  text-transform: uppercase;
+}
+
+.card-text {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  overflow: hidden;
+  opacity: 0.8;
+  text-transform: capitalize;
+  margin: 5px 0;
+  color: var(--grey3);
+}
+
+.left-btn,
+.right-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  background: linear-gradient(rgba(252, 250, 250, 0) 0%, #fcfafa 100%);
+  cursor: pointer;
+  z-index: 9;
+}
+
+.left-btn {
+  left: 10vw;
+  transform: rotate(180deg);
+}
+
+.right-btn {
+  right: 10vw;
+}
+
+.left-btn img,
+.right-btn img {
+  opacity: 0.5;
+}
+
+.left-btn:hover img,
+.right-btn:hover img {
+  opacity: 1;
+  height: 5%;
+}
+
+/* 
+
+
+
+.blog-text {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.8;
+  margin: 5px 0;
+  color: var(--grey3);
+} */
